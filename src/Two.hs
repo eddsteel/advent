@@ -50,6 +50,3 @@ starOne = show . sum . (fmap (paperNeeded . box)) . lines
 
 starTwo :: String -> String
 starTwo = show . sum . (fmap (ribbonNeeded . box)) . lines
-
-main :: IO ()
-main = interact $ starTwo

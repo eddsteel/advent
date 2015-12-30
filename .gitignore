@@ -1,3 +1,5 @@
 *.hi
 *.o
+.stack-workold
 .stack-work
+old

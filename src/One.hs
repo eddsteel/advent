@@ -8,10 +8,6 @@ bite _   = 0
 biteAll  :: String -> Int
 biteAll s = foldr (+) 0 $ fmap bite s
 
-star1 = interact $ show . biteAll
-
-
-star2 = interact $ show . (findBasement 0 0)
 
 findBasement :: Int -> Int -> String -> Int
 findBasement count (-1) _    = count
@@ -20,4 +16,8 @@ findBasement count f (c:cs)  = findBasement (count + 1) (adjust c) cs
         adjust ')' = f - 1
 
 
-main = star2
+star1 :: String -> String
+star1 = show . biteAll
+
+star2 :: String -> String
+star2 = show . (findBasement 0 0)

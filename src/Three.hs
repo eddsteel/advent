@@ -69,6 +69,3 @@ starOne = show . size . snd . journeyS
 
 starTwo :: String -> String
 starTwo = show . size . (uncurry union) . (fmap' snd) . roboJourneyS
-
-main :: IO ()
-main = interact starTwo

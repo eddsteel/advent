@@ -32,3 +32,9 @@ findHash = findHashN 5
 
 findHarderHash :: Int -> String -> Int
 findHarderHash = findHashN 6
+
+starOne :: String -> String
+starOne  = show . (findHash 1)
+
+starTwo :: String -> String
+starTwo  = show . (findHarderHash 1)
