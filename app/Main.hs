@@ -6,6 +6,8 @@ import qualified Three
 import qualified Four
 import qualified Five
 import qualified Six
+import qualified Eleven
+import qualified Twelve
 
 main :: IO ()
-main = interact $ Six.starOne
+main = interact $ Twelve.starTwo
