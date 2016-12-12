@@ -19,11 +19,13 @@ library
                      , DayOne
                      , DayTwo
                      , DayThree
+                     , DayFour
   build-depends:       base >= 4.7 && < 5
                      , text
                      , containers
                      , tuple
                      , split
+                     , parsec
   default-language:    Haskell2010
 
 executable advent2016
