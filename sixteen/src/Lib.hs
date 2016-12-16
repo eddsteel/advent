@@ -8,8 +8,7 @@ import qualified DayOne
 import qualified DayTwo
 import qualified DayThree
 import qualified DayFour
+import qualified DayFive
 
 currentDay :: IO ()
-currentDay = do
-  result <- DayFour.solve
-  putStrLn (T.unpack result)
+currentDay = DayFive.solveIO
