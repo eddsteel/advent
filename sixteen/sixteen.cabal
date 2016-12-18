@@ -21,6 +21,7 @@ library
                      , DayThree
                      , DayFour
                      , DayFive
+                     , DaySix
   build-depends:       base >= 4.7 && < 5
                      , text
                      , containers

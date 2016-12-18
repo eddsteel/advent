@@ -75,7 +75,7 @@ starOneChar bs i =
     else Nothing
 
 -- |
--- >>> solve2 "abc"
+-- > >> solve2 "abc"
 -- "05ace8e3"
 --
 -- I can't work out how to do this lazily, but also obey map semantics.
