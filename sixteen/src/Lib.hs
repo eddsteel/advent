@@ -10,6 +10,7 @@ import qualified DayThree
 import qualified DayFour
 import qualified DayFive
 import qualified DaySix
+import qualified DaySeven
 
 currentDay :: IO ()
-currentDay = DaySix.solve >>= putStrLn
+currentDay = DaySeven.solve >>= putStrLn
