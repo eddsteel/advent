@@ -23,16 +23,18 @@ library
                      , DayFive
                      , DaySix
                      , DaySeven
+                     , DayEight
   build-depends:       base >= 4.7 && < 5
-                     , text
-                     , containers
-                     , tuple
-                     , split
-                     , parsec
-                     , bytestring
-                     , cryptohash
-                     , pureMD5
                      , attoparsec
+                     , bytestring
+                     , containers
+                     , cryptohash
+                     , parsec
+                     , pureMD5
+                     , split
+                     , text
+                     , tuple
+                     , vector
   default-language:    Haskell2010
 
 executable advent2016

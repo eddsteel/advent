@@ -1,6 +1,4 @@
-module Lib
-    ( currentDay
-    ) where
+module Lib (currentDay) where
 
 import Data.Text(Text)
 import qualified Data.Text as T
@@ -11,6 +9,7 @@ import qualified DayFour
 import qualified DayFive
 import qualified DaySix
 import qualified DaySeven
+import qualified DayEight
 
 currentDay :: IO ()
-currentDay = DaySeven.solve >>= putStrLn
+currentDay = DayEight.solve >>= putStrLn
