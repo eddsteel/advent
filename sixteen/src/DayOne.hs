@@ -4,6 +4,7 @@ where
 
 import Data.Text(Text)
 import qualified Data.Text as T
+import qualified Data.Text.IO as TIO
 import Data.Set(Set)
 import qualified Data.Set as S
 
@@ -29,7 +30,7 @@ solveTwo = do
 -- some candidates for extracting for other days
 readWords :: Text -> IO [Text]
 readWords t = do
-  ws <- T.pack <$> readFile (T.unpack t)
+  ws <- TIO.readFile (T.unpack t)
   let ws'= stripCommas ws
   return (T.words ws')
 

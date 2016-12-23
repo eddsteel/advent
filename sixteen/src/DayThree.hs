@@ -3,6 +3,7 @@ module DayThree where
 
 import Data.Text(Text)
 import qualified Data.Text as T
+import qualified Data.Text.IO as TIO
 import Data.Tuple.Curry(uncurryN)
 import Data.List.Split
 import Data.List(transpose)
@@ -13,7 +14,7 @@ import Data.List(transpose)
 
 solve :: IO Text
 solve = do
-  t <- T.lines <$> T.pack <$> readFile "inputs/three.input"
+  t <- T.lines <$> TIO.readFile "inputs/three.input"
   let process = T.pack . show . length . filter (uncurryN triangle)
   let answer1 = process $ readInputs t
   let answer2 = process $ readVertically t

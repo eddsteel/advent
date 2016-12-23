@@ -3,6 +3,7 @@ module DayEight where
 
 import Data.Text(Text)
 import qualified Data.Text as T
+import qualified Data.Text.IO as TIO
 import Data.Vector(Vector)
 import Data.Vector((//),(!))
 import qualified Data.Vector as V
@@ -10,7 +11,7 @@ import Data.Attoparsec.Text
 
 solve :: IO String
 solve = do
-  instructions <- fmap (fmap parseInstruction . T.lines . T.pack) . readFile $ "inputs/eight.input"
+  instructions <- fmap (fmap parseInstruction . T.lines) . TIO.readFile $ "inputs/eight.input"
   let result = foldl (flip exec) (blank 50 6) instructions
   return . unlines $ [solveStarOne result, solveStarTwo result]
 

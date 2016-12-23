@@ -4,6 +4,7 @@ where
 
 import Data.Char(intToDigit, toUpper, digitToInt)
 import Data.Text(Text)
+import qualified Data.Text.IO as TIO
 import Data.Maybe(fromMaybe)
 import qualified Data.Text as T
 
@@ -27,8 +28,7 @@ startTwo = '5'
 
 readInputLines :: IO [Text]
 readInputLines = do
-  t <- readFile "inputs/two.input"
-  (return . T.lines . T.pack) t
+  TIO.readFile "inputs/two.input" >>= return . T.lines
 
 -- |
 -- >>> runLines (5 :: Digit) ["ULL", "RRDDD", "LURDL", "UUUUD"] -- star 1 keypad

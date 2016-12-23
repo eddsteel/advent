@@ -5,13 +5,14 @@ import Control.Applicative(many)
 import Data.Char(isAlpha)
 import Data.Text(Text)
 import qualified Data.Text as T
+import qualified Data.Text.IO as TIO
 import Data.Attoparsec.Text
 import qualified Data.Attoparsec.Internal.Types as Atto
 
 solve :: IO String
 solve = do
-  s <- readFile "inputs/seven.input"
-  let ls = fmap T.pack . lines $ s
+  s <- TIO.readFile "inputs/seven.input"
+  let ls = T.lines s
   return . unlines $ [solveStarOne ls] --, solveStarTwo ls]
 
 solveStarOne :: [Text] -> String
