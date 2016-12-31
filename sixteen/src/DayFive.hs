@@ -9,7 +9,6 @@ import Data.Maybe(catMaybes)
 import Data.Char(isDigit)
 import Data.Int(Int64)
 import Data.Map.Lazy
-import System.IO.Unsafe
 
 md5sum :: B.ByteString -> B.ByteString
 md5sum = B.pack . show . md5

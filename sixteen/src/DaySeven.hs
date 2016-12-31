@@ -1,7 +1,6 @@
 {-# LANGUAGE OverloadedStrings #-}
 module DaySeven where
 
-import Control.Applicative(many)
 import Data.Char(isAlpha)
 import Data.Text(Text)
 import qualified Data.Text as T
