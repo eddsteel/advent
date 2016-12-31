@@ -25,6 +25,7 @@ library
                      , DaySeven
                      , DayEight
                      , DayNine
+                     , DayTen
   build-depends:       base >= 4.7 && < 5
                      , attoparsec
                      , bytestring
