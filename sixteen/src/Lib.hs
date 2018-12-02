@@ -12,6 +12,7 @@ import qualified DaySeven
 import qualified DayEight
 import qualified DayNine
 import qualified DayTen
+import qualified DayEleven
 
 currentDay :: IO ()
-currentDay = DayTen.solve >>= putStrLn . T.unpack
+currentDay = DayEleven.solve >>= putStrLn . T.unpack

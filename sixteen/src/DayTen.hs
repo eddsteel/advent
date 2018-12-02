@@ -7,9 +7,9 @@ import Control.Applicative((<|>))
 import Data.Text(Text)
 import qualified Data.Text as T
 import Data.Maybe(isJust, catMaybes)
-import Data.Map(Map)
+import Data.Map.Strict(Map)
 import Data.List(foldl')
-import qualified Data.Map as M
+import qualified Data.Map.Strict as M
 import Data.Vector(Vector, (//), (!))
 import qualified Data.Vector as V
 import Data.Attoparsec.Text hiding (take)
