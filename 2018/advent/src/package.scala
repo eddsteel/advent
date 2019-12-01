@@ -1,5 +1,5 @@
-package com.eddsteel.advent17
+package com.eddsteel
 
-package object aoc {
+package object advent {
   type AdventErrorOr[A] = Either[AdventError, A]
 }
