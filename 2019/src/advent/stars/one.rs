@@ -31,21 +31,17 @@ fn test_examples() {
 }
 
 pub fn star1() {
-    let lines = advent::input_lines(1);
-    let total = lines.fold(0, |t, l| {
-        let mass = l.unwrap().parse::<i32>().expect("Bad input!");
-        t + fuel(mass)
+    let answer = advent::fold_input_values(1, 0, |total, mass| {
+        total + fuel(mass)
     });
 
-    println!("{}", total);
+    println!("{}", answer);
 }
 
 pub fn star2() {
-    let lines = advent::input_lines(1);
-    let total = lines.fold(0, |t, l| {
-        let mass = l.unwrap().parse::<i32>().expect("Bad input!");
-        t + agg_fuel(mass)
+    let answer = advent::fold_input_values(1, 0, |total, mass| {
+        total + agg_fuel(mass)
     });
 
-    println!("{}", total);
+    println!("{}", answer);
 }
