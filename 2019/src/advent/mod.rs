@@ -1,3 +1,4 @@
+use std::fs;
 use std::fs::File;
 use std::io::BufRead;
 use std::io::BufReader;
@@ -6,6 +7,12 @@ use std::str::FromStr;
 use std::fmt::Debug;
 
 pub mod stars;
+pub mod opcode_computer;
+
+pub fn read_input(day: u8) -> String {
+    let filename = format!("input/{:02}.input", day);
+    fs::read_to_string(filename).expect("Couldn't read file.")
+}
 
 pub fn input_lines(day: u8) -> Lines<BufReader<File>> {
     let filename = format!("input/{:02}.input", day);
