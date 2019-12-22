@@ -1,8 +1,6 @@
 use std::str::FromStr;
 use std::fmt;
-use std::iter::FromIterator;
 use std::result::Result;
-use std::string::ParseError;
 use std::collections::HashSet;
 use std::collections::HashMap;
 use crate::advent::input_lines;
@@ -37,7 +35,7 @@ impl State {
         for tp in tpoints {
             let TPoint(point, cost) = tp;
             self.points.insert(point);
-            if (cost > 0) {
+            if cost > 0 {
                 self.costs
                     .entry(point)
                     .and_modify(|i| *i += cost)

@@ -1,8 +1,5 @@
 use crate::advent;
 use crate::advent::opcode_computer::Computer;
-use std::convert::TryInto;
-use std::num::ParseIntError;
-use std::str::FromStr;
 
 pub fn star1() {
     let line = advent::input_lines(2).next().expect("No input");
