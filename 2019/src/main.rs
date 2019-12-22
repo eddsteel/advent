@@ -1,9 +1,9 @@
 mod advent;
 
-use advent::stars::three;
+use advent::stars::four;
 
 fn main() {
-    three::stars();
+    four::stars();
 }
 
 
