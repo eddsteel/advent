@@ -6,3 +6,6 @@ exe/1: one.c
 
 2:
 	swipl -q -l two.pl
+
+3:
+	./three.bash
