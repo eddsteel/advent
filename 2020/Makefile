@@ -9,3 +9,6 @@ exe/1: one.c
 
 3:
 	./three.bash
+
+4:
+	./four.rb
