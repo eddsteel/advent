@@ -12,3 +12,6 @@ exe/1: one.c
 
 4:
 	./four.rb
+
+5:
+	guile -l five.scm -c '(main)'
