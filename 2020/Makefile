@@ -18,3 +18,6 @@ exe/1: one.c
 
 6:
 	./six.perl
+
+7:
+	scala seven.scala
