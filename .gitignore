@@ -3,3 +3,5 @@
 .stack-workold
 .stack-work
 old
+*.ui
+*.uo

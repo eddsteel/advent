@@ -1,6 +1,9 @@
 exe/1: one.c
 	gcc one.c -o exe/1
 
+exe/8: eight.sml
+	mosmlc eight.sml -o exe/8
+
 1: exe/1
 	./exe/1
 
@@ -21,3 +24,6 @@ exe/1: one.c
 
 7:
 	scala seven.scala
+
+8: exe/8
+	./exe/8
