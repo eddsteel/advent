@@ -27,3 +27,6 @@ exe/8: eight.sml
 
 8: exe/8
 	./exe/8
+
+9:
+	python3 nine.py
