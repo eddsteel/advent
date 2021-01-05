@@ -30,3 +30,6 @@ exe/8: eight.sml
 
 9:
 	python3 nine.py
+
+10:
+	runhaskell ten.hs
