@@ -5,3 +5,5 @@
 old
 *.ui
 *.uo
+.gradle
+build
