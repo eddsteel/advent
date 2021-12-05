@@ -7,6 +7,8 @@ import kotlinx.coroutines.flow.asFlow
 import kotlinx.coroutines.flow.flow
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.collect
+import kotlinx.coroutines.flow.take
+import kotlinx.coroutines.flow.toList
 
 suspend fun <R> Flow<R>.windowed(n: Int): Flow<List<R>> {
     val flw: Flow<R> = this
