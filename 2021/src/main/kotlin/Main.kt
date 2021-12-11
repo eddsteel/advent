@@ -5,8 +5,8 @@ import kotlinx.coroutines.Dispatchers
 
 fun main(): Unit {
     runBlocking(Dispatchers.IO) {
-        Day03.example()
-        println(Day03.star1())
-        println(Day03.star2())
+        Day04.example()
+        println("Star 1: ${Day04.star1()}")
+        println("Star 2: ${Day04.star2()}")
     }
 }
